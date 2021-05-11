@@ -1,3 +1,0 @@
-
-font-family: 'Overpass', sans-serif;
-font-family: 'Ubuntu', sans-serif;
