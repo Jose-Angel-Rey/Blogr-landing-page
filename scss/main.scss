@@ -1,0 +1,24 @@
+// ************************
+//        MAIN.SCSS
+// ************************
+
+//  Utilities
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
+// Base
+@import "./base/reset";
+@import "./base/typography";
+
+// layout
+@import "./layout/container";
+@import "./layout/header";
+@import "./layout/article";
+@import "./layout/footer";
+
+// Components
+@import "./components/accordion";
+@import "./components/buttons";
+@import "./components/footer-nav";
+@import "./components/hamburguer-nav";
+@import "./components/header-nav";
