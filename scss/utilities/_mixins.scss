@@ -2,7 +2,7 @@
 //       MIXINS
 // ***********************
 
-@mixin bdr($bdr-color: magenta) {
+@mixin bdr($bdr-color: blue) {
   border: 0px solid $bdr-color;
 }
 
