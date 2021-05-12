@@ -7,10 +7,10 @@ img {
 .main-header-container {
   background-image: url(../../images/bg-pattern-intro.svg),
     linear-gradient(90deg, $btn-bg-color-one, $btn-bg-color-two);
-  background-size: 150%;
+  background-size: 320%;
   background-repeat: no-repeat;
-  background-position: -25vw, 0;
-  border-bottom-left-radius: 25%;
+  background-position: -70vw -45vw, 0;
+  border-bottom-left-radius: 10rem;
   padding: 5rem 0rem;
 }
 .main-header {
