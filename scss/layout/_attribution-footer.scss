@@ -1,0 +1,18 @@
+// ********************************
+//       ATTRIBUTION FOOTER
+// ********************************
+
+.attribution {
+  background-color: $footer-bg-color;
+  color: $footer-text-color;
+  font: {
+    family: $main-font-family;
+    size: 1.4rem;
+  }
+  text-align: center;
+  padding: 2rem 1rem;
+
+  a {
+    color: $btn-bg-color-one;
+  }
+}
