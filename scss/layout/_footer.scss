@@ -5,15 +5,20 @@
 .main-footer {
   @include bdr(cyan);
   @include flexbox($direction: column);
+  margin: 10rem 0 3rem;
+  width: 85%;
 
+  @include for-medium-screens{
+  @include flexbox($justify:space-between,$align:flex-start); 
+  margin: 5rem 0 2rem;
+  }
   // Main footer - Container
   &-container {
     @include flexbox;
     background-color: $footer-bg-color;
     border-top-right-radius: 10rem;
     color: $footer-text-color;
-    padding: 10rem 0 3rem;
-  }
+    }
   // Main footer - logo
   &__logo {
     margin-bottom: 10rem;
