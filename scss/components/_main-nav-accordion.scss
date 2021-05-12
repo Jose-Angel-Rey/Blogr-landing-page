@@ -3,14 +3,23 @@
 // *****************************
 
 .main-nav__accordion-container {
-  //   @include bdr(magenta);
+  @include bdr(magenta);
   font-size: 2rem;
   text-align: center;
+
+  @include for-medium-screens {
+    @include flexbox($justify: space-evenly, $align: flex-start);
+    width: 30rem;
+  }
 }
 
 // Accordion - item
 .main-nav__accordion-item {
   border-bottom: 1px solid #eee;
+  @include for-medium-screens {
+    border-bottom: none;
+  }
+
   // Accordion - item title
   &-title {
     color: $headings-text-color;
@@ -22,6 +31,17 @@
     padding: 1rem 0rem;
     position: relative;
     text-decoration: none;
+
+    @include for-medium-screens {
+      color: $white-text;
+
+      &::after {
+        content: url("../../images/icon-arrow-light.svg");
+        position: absolute;
+        margin-left: 1rem;
+        transition: transform 0.5s;
+      }
+    }
 
     &::after {
       content: url("../../images/icon-arrow-dark.svg");

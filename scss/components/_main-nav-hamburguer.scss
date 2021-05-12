@@ -8,6 +8,11 @@
   position: relative;
   width: 5rem;
   height: 5rem;
+
+  @include for-medium-screens {
+    width: 80%;
+    position: static;
+  }
 }
 .main-nav__hamburger-icon {
   cursor: pointer;
@@ -36,6 +41,16 @@
   opacity: 0;
   transition: all 0.5s ease;
   transform: translateX(-150%);
+
+  @include for-medium-screens {
+    @include bdr;
+    @include flexbox($justify: space-between);
+    background-color: transparent;
+    box-shadow: none;
+    position: static;
+    transform: translate(0%);
+    opacity: 1;
+  }
 }
 .main-nav--show {
   transform: translateX(0%);
