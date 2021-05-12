@@ -26,9 +26,11 @@
     &::after {
       content: url("../../images/icon-arrow-dark.svg");
       position: absolute;
-      width: 1rem;
-      height: 1rem;
       margin-left: 1rem;
+      transition: transform .5s;
+    }
+    &--active::after{
+      transform: rotate(.5turn);
     }
   }
 
