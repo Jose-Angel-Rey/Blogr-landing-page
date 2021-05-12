@@ -11,11 +11,21 @@
     weight: 600;
   }
   margin: 2rem 0rem 1rem;
+
+  @include for-medium-screens {
+    @include bdr;
+    margin: 0;
+    // width: 20%;
+    @include flexbox($direction: row, $justify: space-between);
+  }
 }
 .main-nav__btn:first-of-type {
   margin-bottom: 2rem;
   padding: 0.5rem 4rem;
   text-decoration: none;
+  @include for-medium-screens{
+    margin-bottom: 0;
+  }
 }
 .main-nav__btn:last-of-type {
   background: linear-gradient(90deg, $btn-bg-color-one, $btn-bg-color-two);
