@@ -34,6 +34,7 @@
 
     @include for-medium-screens {
       font-size: 3rem;
+      margin-bottom: 5rem;
     }
   }
   // Seccion one - Illustration
@@ -61,7 +62,8 @@
   // Seccion one - Content
   &__content-container {
     @include for-medium-screens {
-      width: 40%;
+      width: 50%;
+      @include flexbox($direction: column, $justify: flex-end);
     }
   }
   &__article {
@@ -69,6 +71,11 @@
     text-align: center;
     font-family: $main-font-family;
     margin-bottom: 3rem;
+    @include for-medium-screens {
+      transform: translateX(20%);
+      text-align: left;
+      width: 85%;
+    }
 
     &-title {
       color: $headings-text-color;
