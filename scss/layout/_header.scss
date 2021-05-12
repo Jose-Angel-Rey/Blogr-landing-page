@@ -18,6 +18,7 @@
 
   //   Main header - Content
   &__content {
+    @include flexbox($direction:column);
     text-align: center;
     margin: 10rem 0rem;
 
