@@ -1,0 +1,27 @@
+// *****************************
+//      MAIN NAV BUTTONS
+// *****************************
+
+.main-nav__btn-container {
+  //   @include bdr;
+  @include flexbox($direction: column);
+  color: $headings-text-color;
+  font: {
+    size: 1.8rem;
+    weight: 600;
+  }
+  margin: 2rem 0rem 1rem;
+}
+.main-nav__btn:first-of-type {
+  margin-bottom: 2rem;
+  padding: 0.5rem 4rem;
+  text-decoration: none;
+}
+.main-nav__btn:last-of-type {
+  background: linear-gradient(90deg, $btn-bg-color-one, $btn-bg-color-two);
+  border-radius: 2.5rem;
+  color: $white-text;
+  padding: 1.2rem 4rem;
+  text-decoration: none;
+  width: fit-content;
+}
