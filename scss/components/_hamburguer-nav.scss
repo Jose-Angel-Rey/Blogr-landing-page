@@ -1,0 +1,15 @@
+// *****************************
+//      HAMBURGUER NAV
+// *****************************
+
+.main-nav__hamburguer-icon-container{
+    @include bdr(cyan);
+    position: relative;
+}
+.main-nav{
+    background-color: $white-text;
+    position: absolute;
+    right: 0;
+    top: 5rem;
+    width: 80vw;
+}

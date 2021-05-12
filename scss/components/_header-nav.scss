@@ -1,0 +1,13 @@
+// ***********************
+//      MAIN HEADER NAV 
+// ***********************
+
+.main-nav-container{
+    @include bdr;
+    @include flexbox($justify:space-between);
+    // position: relative;
+}
+
+.main-nav__logo{
+    width: 10rem;
+}
