@@ -1,19 +1,38 @@
 // **********************
 //      MAIN HEADER
 // **********************
-
+img {
+  max-width: 50%;
+}
 .main-header-container {
   background-image: url(../../images/bg-pattern-intro.svg),
     linear-gradient(90deg, $btn-bg-color-one, $btn-bg-color-two);
   background-size: 150%;
   background-repeat: no-repeat;
   background-position: -25vw, 0;
+  border-bottom-left-radius: 25%;
+  padding: 5rem 0rem;
 }
 .main-header {
   @include bdr;
-  width: 80%;
-}
+  color: $white-text;
+  font-family: $main-font-family;
+  width: 85%;
 
-img {
-  max-width: 0%;
+  //   Main header - Content
+  &__content {
+    text-align: center;
+    margin: 10rem 0rem;
+
+    &-title {
+      font-size: 3.2rem;
+    }
+    &-description {
+      font: {
+        size: 1.6rem;
+        weight: 300;
+      }
+      margin: 2rem 0rem 3rem;
+    }
+  }
 }
