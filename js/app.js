@@ -1,14 +1,12 @@
 const hamburguerNav = document.querySelector(".main-nav__hamburger-icon");
-const accordionItems = document.querySelectorAll(
-  ".main-nav__accordion-item-title"
-);
+const accordionItems = document.querySelectorAll(".main-nav__accordion-item-title");
 
 loadEvents();
 function loadEvents() {
   // Show or hidde menu
   hamburguerNav.addEventListener("click", showMenu);
 
-  //Accordion
+  //Accordion effect
   accordionEffect();
 }
 
@@ -23,47 +21,26 @@ function showMenu() {
   }
 }
 
-// Accordion
+// Accordion effect
 function accordionEffect() {
   accordionItems.forEach((item) => {
-    console.log(item);
     item.addEventListener("click", () => {
-      if (
-        !item.nextElementSibling.classList.contains(
-          "main-nav__accordion-item-content--show"
-        )
-      ) {
-        const checkItems = document.querySelectorAll(
-          ".main-nav__accordion-item-title"
-        );
-        checkItems.forEach((otherItem) => {
-          if (
-            otherItem.nextElementSibling.classList.contains(
-              "main-nav__accordion-item-content--show"
-            )
-          ) {
-            otherItem.classList.remove(
-              "main-nav__accordion-item-title--active"
-            );
-            otherItem.nextElementSibling.classList.remove(
-              "main-nav__accordion-item-content--show"
-            );
+      if (!item.nextElementSibling.classList.contains("main-nav__accordion-item-content--show")) {
+        // Check others items before to show the actual item
+        const checkItems = document.querySelectorAll(".main-nav__accordion-item-title");
+        checkItems.forEach( otherItem => {
+          if (otherItem.nextElementSibling.classList.contains("main-nav__accordion-item-content--show")) {
+            otherItem.classList.remove("main-nav__accordion-item-title--active");
+            otherItem.nextElementSibling.classList.remove("main-nav__accordion-item-content--show");
           }
         });
 
         item.classList.add("main-nav__accordion-item-title--active");
-        item.nextElementSibling.classList.add(
-          "main-nav__accordion-item-content--show"
-        );
-      } else if (
-        item.nextElementSibling.classList.contains(
-          "main-nav__accordion-item-content--show"
-        )
-      ) {
+        item.nextElementSibling.classList.add("main-nav__accordion-item-content--show");
+
+      } else if (item.nextElementSibling.classList.contains("main-nav__accordion-item-content--show")) {
         item.classList.remove("main-nav__accordion-item-title--active");
-        item.nextElementSibling.classList.remove(
-          "main-nav__accordion-item-content--show"
-        );
+        item.nextElementSibling.classList.remove("main-nav__accordion-item-content--show");
       }
     });
   });
