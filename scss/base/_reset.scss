@@ -2,12 +2,19 @@
 //         RESET
 // *************************
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-:root{
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+.sr-only {
+  position: absolute;
+  right: -100000000000000;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
