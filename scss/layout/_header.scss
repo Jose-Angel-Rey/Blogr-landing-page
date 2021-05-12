@@ -1,0 +1,19 @@
+// **********************
+//      MAIN HEADER
+// **********************
+
+.main-header-container {
+  background-image: url(../../images/bg-pattern-intro.svg),
+    linear-gradient(90deg, $btn-bg-color-one, $btn-bg-color-two);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: -25vw, 0;
+}
+.main-header {
+  @include bdr;
+  width: 80%;
+}
+
+img {
+  max-width: 0%;
+}

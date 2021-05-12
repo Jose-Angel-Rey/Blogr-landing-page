@@ -2,13 +2,9 @@
 //      CONTAINER
 // **********************
 
-.main-container {
-  @include bdr(red);
+.main-container,
+.main-container > [class*="container"] {
+  @include bdr(magenta);
+  @include flexbox($direction: column);
   width: 100%;
-
-  & > [class*="container"] {
-    @include bdr(magenta);
-    @include flexbox($justify: column);
-    width: 100%;
-  }
 }
