@@ -11,10 +11,6 @@
 }
 .main-nav__hamburger-icon {
   margin: auto;
-  &:hover + .main-nav {
-    transform: translateX(0%);
-    opacity: 1;
-  }
 }
 .main-nav {
   background-color: $white-text;
@@ -28,4 +24,8 @@
   opacity: 0;
   transition: all 0.5s ease;
   transform: translateX(-150%);
+}
+.main-nav--show {
+  transform: translateX(0%);
+  opacity: 1;
 }

@@ -30,10 +30,6 @@
       height: 1rem;
       margin-left: 1rem;
     }
-    &:hover + .main-nav__accordion-item-content {
-      padding: 2rem 0rem;
-      display: block;
-    }
   }
 
   //Accordion - item content
@@ -42,6 +38,11 @@
     border-radius: 0.5rem;
     list-style-type: none;
     display: none;
+
+    &--show {
+      padding: 2rem 0rem;
+      display: block;
+    }
   }
   // Accordion - item link
   &-link {
