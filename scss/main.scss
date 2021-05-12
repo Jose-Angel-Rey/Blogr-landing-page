@@ -16,8 +16,9 @@
 @import "./layout/footer";
 
 // Components
-@import "./components/accordion";
+@import "./components/main-nav";
+@import "./components/main-nav-buttons";
+@import "./components/main-nav-hamburguer";
+@import "./components/./main-nav-accordion";
 @import "./components/buttons";
 @import "./components/footer-nav";
-@import "./components/hamburguer-nav";
-@import "./components/header-nav";
