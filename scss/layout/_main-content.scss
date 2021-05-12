@@ -98,3 +98,49 @@ img {
     }
   }
 }
+
+
+
+// Section three
+.section-three {
+  @include bdr(red);
+  @include flexbox($direction: column);
+  margin: 3rem 0rem 2rem;
+  width: 85%;
+  &__title {
+    color: $headings-text-color;
+    font: {
+      family: $second-font-family;
+      size: 2.6rem;
+      weight: 500;
+    }
+    text-align: center;
+  }
+  &__illustration {
+    @include bdr(red);
+    max-width: 100%;
+    margin: 3rem 0rem;
+  }
+
+  //   Content
+  &__article {
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: $main-font-family;
+    margin-bottom: 3rem;
+
+    &-title {
+      color: $headings-text-color;
+      font: {
+        size: 2.4rem;
+        weight: 600;
+      }
+      margin-bottom: 2rem;
+    }
+    &-description {
+      color: $content-text-color;
+      font-weight: 300;
+      line-height: 2.5rem;
+    }
+  }
+}
