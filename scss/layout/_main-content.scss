@@ -72,7 +72,7 @@
     font-family: $main-font-family;
     margin-bottom: 3rem;
     @include for-medium-screens {
-      transform: translateX(20%);
+      transform: translateX(15%);
       text-align: left;
       width: 85%;
     }
@@ -100,6 +100,10 @@
   position: relative;
   width: 85%;
   max-width: 40rem;
+  @include for-medium-screens {
+    @include flexbox($justify: space-evenly);
+    max-width: 85%;
+  }
 
   // Section two - Container
   &-container {
@@ -112,6 +116,15 @@
     border-radius: 0 10rem 0 10rem;
     margin-top: 25rem;
     width: 100%;
+
+    @include for-medium-screens {
+      background: url(../../images/bg-pattern-circles.svg),
+        linear-gradient($section-two-bg-color-one, $section-two-bg-color-two);
+      background-size: 110%;
+      background-position: -30vw -40vw, 0;
+      background-repeat: no-repeat;
+      margin: 15rem 0;
+    }
   }
 
   // Section two - Illustration
@@ -119,6 +132,11 @@
     max-width: 105%;
     position: absolute;
     transform: translate(-6%, -100%);
+    @include for-medium-screens {
+      left: -10%;
+      transform: translate(0%);
+      width: 70%;
+    }
   }
   // Section two - Content
   &__content {
@@ -128,6 +146,11 @@
     font-size: 1.6rem;
     text-align: center;
     margin: 16rem auto 12rem;
+    @include for-medium-screens {
+      margin: 6rem 0 6rem auto;
+      text-align: left;
+      width: 40%;
+    }
 
     &-title {
       font: {
@@ -150,7 +173,11 @@
   @include flexbox($direction: column);
   margin: 3rem 0rem 2rem;
   width: 85%;
-
+  @include for-medium-screens {
+    @include flexbox($direction: row, $wrap: wrap, $justify: space-evenly);
+    position: relative;
+    width: 100%;
+  }
   // Section three - Title
   &__title {
     color: $headings-text-color;
@@ -162,18 +189,43 @@
     text-align: center;
   }
   // Section three - Illustration
+  picture {
+    @include for-medium-screens {
+      width: 50%;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+  }
   &__illustration {
     @include bdr(red);
     max-width: 100%;
     margin: 3rem 0rem;
+    @include for-medium-screens {
+      max-width: 130%;
+      position: absolute;
+      transform: translateX(-25%);
+    }
   }
 
   // Section three - Content
+  &__content-container {
+    @include for-medium-screens {
+      @include flexbox($direction: column, $justify: flex-end);
+      width: 50%;
+      order: 1;
+    }
+  }
   &__article {
     font-size: 1.6rem;
     text-align: center;
     font-family: $main-font-family;
     margin-bottom: 3rem;
+    @include for-medium-screens {
+      transform: translateX(-15%);
+      text-align: left;
+      width: 85%;
+    }
 
     &-title {
       color: $headings-text-color;

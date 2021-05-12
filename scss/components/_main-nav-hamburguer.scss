@@ -10,7 +10,19 @@
   height: 5rem;
 }
 .main-nav__hamburger-icon {
+  cursor: pointer;
   margin: auto;
+  transition: all 0.5s;
+  @include for-medium-screens {
+    display: none;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:active {
+    transform: scale(0.95);
+  }
 }
 .main-nav {
   background-color: $white-text;
