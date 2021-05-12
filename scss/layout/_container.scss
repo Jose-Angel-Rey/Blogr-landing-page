@@ -1,0 +1,14 @@
+// **********************
+//      CONTAINER
+// **********************
+
+.main-container {
+  @include bdr(red);
+  width: 100%;
+
+  & > [class*="container"] {
+    @include bdr(magenta);
+    @include flexbox($justify: column);
+    width: 100%;
+  }
+}
