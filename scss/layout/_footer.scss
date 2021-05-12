@@ -1,0 +1,21 @@
+// *********************************
+//         MAIN FOOTER
+// *********************************
+
+.main-footer {
+  @include bdr(cyan);
+  @include flexbox($direction: column);
+
+  // Main footer - Container
+  &-container {
+    @include flexbox;
+    background-color: $footer-bg-color;
+    border-top-right-radius: 10rem;
+    color: $footer-text-color;
+    padding: 10rem 0 5rem;
+  }
+  // Main footer - logo
+  &__logo {
+    margin-bottom: 3rem;
+  }
+}

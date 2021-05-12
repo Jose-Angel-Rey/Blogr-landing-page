@@ -1,0 +1,26 @@
+// ****************************
+//       MAIN FOOTER NAV
+// ****************************
+
+.main-footer__nav {
+  @include bdr;
+  font: {
+    family: $main-font-family;
+    size: 1.6rem;
+  }
+  margin-bottom: 3rem;
+  text-align: center;
+  width: 100%;
+
+  &-title {
+    color: $white-text;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  &-link {
+    color: $footer-text-color;
+    display: block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+  }
+}
