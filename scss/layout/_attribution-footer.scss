@@ -13,6 +13,14 @@
   padding: 2rem 1rem;
 
   a {
-    color: $btn-bg-color-one;
+    background: linear-gradient(
+      -40deg,
+      lighten($btn-bg-color-one, 10%),
+      $btn-bg-color-two
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 600;
   }
 }
