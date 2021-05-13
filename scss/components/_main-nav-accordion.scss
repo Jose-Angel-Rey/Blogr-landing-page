@@ -9,7 +9,7 @@
 
   @include for-medium-screens {
     @include flexbox($justify: space-evenly, $align: flex-start);
-    width: 30rem;
+    width: 35rem;
   }
 }
 
