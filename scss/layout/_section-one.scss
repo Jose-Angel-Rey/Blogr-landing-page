@@ -95,6 +95,9 @@
         weight: 600;
       }
       margin-bottom: 2rem;
+      @include for-extra-large-screens {
+        font-size: 3rem;
+      }
     }
     // Seccion one - Content - Article description
     &-description {
