@@ -1,0 +1,34 @@
+// *****************************
+//      MAIN NAV HAMBURGER
+// *****************************
+
+.main-nav__hamburger-icon {
+  cursor: pointer;
+  margin: auto;
+  transition: all 0.5s;
+  @include for-medium-screens {
+    display: none;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &-container {
+    @include bdr(cyan);
+    display: flex;
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+
+    @include for-medium-screens {
+      @include flexbox($justify: space-between);
+      height: auto;
+      width: 85%;
+      position: static;
+    }
+  }
+}

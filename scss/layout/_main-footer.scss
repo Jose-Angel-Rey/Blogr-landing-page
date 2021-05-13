@@ -1,0 +1,29 @@
+// *********************************
+//         MAIN FOOTER
+// *********************************
+
+.main-footer {
+  @include bdr(cyan);
+  @include flexbox($direction: column);
+  margin: 10rem 0 3rem;
+  width: 85%;
+  max-width: 105rem;
+
+  @include for-medium-screens {
+    @include flexbox($justify: space-between, $align: flex-start);
+    margin: 8rem 0 2rem;
+  }
+
+  // Main footer - Container
+  &-container {
+    @include flexbox;
+    background-color: $footer-bg-color;
+    border-top-right-radius: 10rem;
+    color: $footer-text-color;
+  }
+
+  // Main footer - logo
+  &__logo {
+    margin-bottom: 10rem;
+  }
+}

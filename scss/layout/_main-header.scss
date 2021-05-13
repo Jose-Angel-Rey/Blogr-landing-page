@@ -1,0 +1,48 @@
+// **********************
+//      MAIN HEADER
+// **********************
+
+.main-header {
+  @include bdr;
+  color: $white-text;
+  font-family: $main-font-family;
+  width: 85%;
+
+  // Container
+  &-container {
+    background-image: url(../../images/bg-pattern-intro.svg),
+      linear-gradient(90deg, $btn-bg-color-one, $btn-bg-color-two);
+    background-size: 320%;
+    background-repeat: no-repeat;
+    background-position: -70vw -45vw, 0;
+    border-bottom-left-radius: 10rem;
+    padding: 5rem 0rem;
+    @include for-medium-screens {
+      background-position: -55vw -120vw, 0;
+    }
+  }
+
+  // Main header - Content
+  &__content {
+    @include flexbox($direction: column);
+    text-align: center;
+    margin: 11rem 0rem;
+
+    // Main header - Content title
+    &-title {
+      font-size: 3.2rem;
+      @include for-medium-screens {
+        font-size: 4.2rem;
+      }
+    }
+
+    // Main header - Content description
+    &-description {
+      font: {
+        size: 1.6rem;
+        weight: 300;
+      }
+      margin: 2rem 0rem 3rem;
+    }
+  }
+}
