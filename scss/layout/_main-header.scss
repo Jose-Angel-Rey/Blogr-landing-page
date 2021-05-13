@@ -3,10 +3,10 @@
 // **********************
 
 .main-header {
-  @include bdr;
   color: $white-text;
   font-family: $main-font-family;
   width: 85%;
+  max-width: 135rem;
 
   // Container
   &-container {
@@ -23,7 +23,10 @@
     }
     @include for-large-screens {
       background-position: -20vw -70vw, 0;
-    background-size: 200%;
+      background-size: 200%, 100%;
+    }
+    @include for-extra-large-screens {
+      background-position: -20vw -80vw, 0;
     }
   }
 
@@ -39,6 +42,9 @@
       @include for-medium-screens {
         font-size: 4.5rem;
       }
+      @include for-extra-large-screens {
+        font-size: 5.5rem;
+      }
     }
 
     // Main header - Content description
@@ -50,6 +56,10 @@
       margin: 2rem 0rem 3rem;
       @include for-medium-screens {
         font-size: 1.8rem;
+      }
+      @include for-extra-large-screens {
+        font-size: 2rem;
+        margin: 3rem auto;
       }
     }
   }

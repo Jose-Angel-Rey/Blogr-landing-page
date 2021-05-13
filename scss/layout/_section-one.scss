@@ -4,7 +4,6 @@
 
 // Section one
 .section-one {
-  @include bdr(red);
   @include flexbox($direction: column);
   margin: 3rem 0rem 2rem;
   width: 85%;
@@ -54,7 +53,6 @@
     }
   }
   &__illustration {
-    @include bdr(red);
     max-width: 100%;
     margin: 3rem 0rem;
 

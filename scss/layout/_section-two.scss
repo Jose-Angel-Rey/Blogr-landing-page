@@ -3,7 +3,6 @@
 // **************************************
 
 .section-two {
-  @include bdr(cyan);
   @include h-center;
   position: relative;
   width: 85%;
@@ -18,7 +17,6 @@
 
   // Section two - Container
   &-container {
-    @include bdr;
     background: url(../../images/bg-pattern-circles.svg),
       linear-gradient($section-two-bg-color-one, $section-two-bg-color-two);
     background-size: 160%;
@@ -59,11 +57,13 @@
       left: 0;
       width: 55rem;
     }
+    @include for-extra-large-screens {
+      width: 60rem;
+    }
   }
 
   // Section two - Content
   &__content {
-    @include bdr(cyan);
     color: $white-text;
     font-family: $main-font-family;
     font-size: 1.6rem;
@@ -80,7 +80,7 @@
       max-width: 52rem;
     }
     @include for-extra-large-screens {
-      margin: 11rem 5rem 11rem auto;
+      margin: 12rem 7rem 12rem auto;
     }
 
     // Section two - Content title
@@ -90,6 +90,9 @@
         weight: 600;
       }
       margin-bottom: 2rem;
+      @include for-extra-large-screens {
+        font-size: 3.5rem;
+      }
     }
 
     // Section two - Content description
