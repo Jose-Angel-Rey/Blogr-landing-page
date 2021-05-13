@@ -6,6 +6,8 @@
   @include bdr(cyan);
   @include flexbox($direction: column);
   padding: 8rem 0rem;
+  width: 100%;
+  overflow: hidden
 }
 
 // Section one
@@ -111,34 +113,6 @@
   }
   @include for-large-screens {
     max-width: 110rem;
-  }
-
-  // Section two - Container
-  &-container {
-    @include bdr;
-    background: url(../../images/bg-pattern-circles.svg),
-      linear-gradient($section-two-bg-color-one, $section-two-bg-color-two);
-    background-size: 160%;
-    background-repeat: no-repeat;
-    background-position: center -70vw, 0;
-    border-radius: 0 10rem 0 10rem;
-    margin-top: 25rem;
-    width: 100%;
-
-    @include for-medium-screens {
-      background: url(../../images/bg-pattern-circles.svg),
-        linear-gradient($section-two-bg-color-one, $section-two-bg-color-two);
-      background-size: 110%;
-      background-position: -30vw -40vw, 0;
-      background-repeat: no-repeat;
-      margin: 15rem 0;
-    }
-    @include for-large-screens {
-      background-size: 100%;
-      background-position: -22vw -50vw, 0;
-      margin: 20rem 0;
-      // width: 99vw;
-    }
   }
 
   // Section two - Illustration
@@ -267,3 +241,29 @@
     }
   }
 }
+  // Section two - Container
+.section-two-container {
+    @include bdr;
+    background: url(../../images/bg-pattern-circles.svg),
+      linear-gradient($section-two-bg-color-one, $section-two-bg-color-two);
+    background-size: 160%;
+    background-repeat: no-repeat;
+    background-position: center -70vw, 0;
+    border-radius: 0 10rem 0 10rem;
+    margin-top: 25rem;
+    width: 100%;
+    @include for-medium-screens {
+      background: url(../../images/bg-pattern-circles.svg),
+        linear-gradient($section-two-bg-color-one, $section-two-bg-color-two);
+      background-size: 110%;
+      background-position: -30vw -40vw, 0;
+      background-repeat: no-repeat;
+      margin: 15rem 0;
+    }
+    @include for-large-screens {
+      background-size: 100%;
+      background-position: -22vw -50vw, 0;
+      margin: 20rem 0;
+      // width: 99vw;
+    }
+  }
