@@ -10,6 +10,10 @@
 :root {
   font-size: 62.5%;
   scroll-behavior: smooth;
+
+  @include for-medium-screens{
+    font-size: 55%;
+  }
 }
 .sr-only {
   position: absolute;
