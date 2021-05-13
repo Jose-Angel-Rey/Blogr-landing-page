@@ -4,7 +4,7 @@
 
 .main-nav {
   &__btn-container {
-    //   @include bdr;
+    @include bdr;
     @include flexbox($direction: column);
     font: {
       size: 1.8rem;
@@ -33,7 +33,8 @@
       width: 40%;
     }
   }
-  .main-nav__btn:last-of-type {
+
+  &__btn:last-of-type {
     background: linear-gradient(90deg, $btn-bg-color-one, $btn-bg-color-two);
     border-radius: 2.5rem;
     color: $white-text;

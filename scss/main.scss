@@ -2,6 +2,8 @@
 //        MAIN.SCSS
 // ************************
 
+@charset "utf-8";
+
 //  Utilities
 @import "./utilities/variables";
 @import "./utilities/mixins";
@@ -11,19 +13,18 @@
 
 // layout
 @import "./layout/container";
-@import "./layout/header";
+@import "./layout/main-header";
 @import "./layout/main-content";
 @import "./layout/section-one";
 @import "./layout/section-two";
 @import "./layout/section-three";
-@import "./layout/footer";
+@import "./layout/main-footer";
 @import "./layout/attribution-footer";
 
 // Components
 @import "./components/cta-buttons";
 @import "./components/main-nav";
 @import "./components/main-nav-buttons";
-@import "./components/main-nav-hamburguer";
+@import "./components/main-nav-hamburger";
 @import "./components/./main-nav-accordion";
-@import "./components/buttons";
 @import "./components/footer-nav";
