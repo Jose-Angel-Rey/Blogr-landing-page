@@ -7,7 +7,7 @@
   @include flexbox($direction: column);
   margin: 10rem 0 3rem;
   width: 85%;
-  max-width: 90rem;
+  max-width: 105rem;
 
   @include for-medium-screens{
   @include flexbox($justify:space-between,$align:flex-start); 
