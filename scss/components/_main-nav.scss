@@ -26,14 +26,20 @@
     padding: 0;
     width: 100%;
   }
+
+  // Main nav - Show
   &--show {
     transform: translateX(0%);
     opacity: 1;
   }
+
+  // Container
   &-container {
     @include bdr;
     @include flexbox($justify: space-between);
   }
+
+  // Logo
   &__logo {
     display: contents;
     img {

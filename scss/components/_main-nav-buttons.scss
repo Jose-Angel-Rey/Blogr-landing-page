@@ -2,49 +2,52 @@
 //      MAIN NAV BUTTONS
 // *****************************
 
-.main-nav__btn-container {
-  //   @include bdr;
-  @include flexbox($direction: column);
-  font: {
-    size: 1.8rem;
-    weight: 600;
-  }
-  margin: 2rem 0rem 1rem;
+.main-nav {
+  &__btn-container {
+    //   @include bdr;
+    @include flexbox($direction: column);
+    font: {
+      size: 1.8rem;
+      weight: 600;
+    }
+    margin: 2rem 0rem 1rem;
 
-  @include for-medium-screens {
-    @include bdr;
-    margin: 0;
-    margin-left: auto;
-    width: 50%;
-    max-width: 27rem;
-    @include flexbox($direction: row, $justify: space-between);
+    @include for-medium-screens {
+      @include bdr;
+      margin: 0;
+      margin-left: auto;
+      width: 50%;
+      max-width: 27rem;
+      @include flexbox($direction: row, $justify: space-between);
+    }
   }
-}
-.main-nav__btn:first-of-type {
-  color: $headings-text-color;
-  margin-bottom: 2rem;
-  padding: 0.5rem 4rem;
-  text-decoration: none;
-  @include for-medium-screens {
+
+  &__btn:first-of-type {
+    color: $headings-text-color;
+    margin-bottom: 2rem;
+    padding: 0.5rem 4rem;
+    text-decoration: none;
+    @include for-medium-screens {
+      color: $white-text;
+      margin-bottom: 0;
+      width: 40%;
+    }
+  }
+  .main-nav__btn:last-of-type {
+    background: linear-gradient(90deg, $btn-bg-color-one, $btn-bg-color-two);
+    border-radius: 2.5rem;
     color: $white-text;
-    margin-bottom: 0;
-    width: 40%;
-  }
-}
-.main-nav__btn:last-of-type {
-  background: linear-gradient(90deg, $btn-bg-color-one, $btn-bg-color-two);
-  border-radius: 2.5rem;
-  color: $white-text;
-  padding: 1.2rem 4rem;
-  text-decoration: none;
-  width: fit-content;
-  @include for-medium-screens {
-    background: #fff;
-    color: $btn-bg-color-one;
-    font-weight: bold;
-    width: 50%;
-    max-width: 15rem;
-    text-align: center;
-    padding: 1.1rem 0;
+    padding: 1.2rem 4rem;
+    text-decoration: none;
+    width: fit-content;
+    @include for-medium-screens {
+      background: #fff;
+      color: $btn-bg-color-one;
+      font-weight: bold;
+      width: 50%;
+      max-width: 15rem;
+      text-align: center;
+      padding: 1.1rem 0;
+    }
   }
 }
