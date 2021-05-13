@@ -39,9 +39,11 @@
     }
   }
   &__illustration {
+    animation: beats 1s 1s alternate infinite;
     max-width: 100%;
     margin: 3rem 0rem;
     @include for-medium-screens {
+      animation: none;
       max-width: 130%;
       position: absolute;
       transform: translateX(-25%);
@@ -77,6 +79,8 @@
     // Content - Article title
     &-title {
       color: $headings-text-color;
+      animation: beats 1s 1s alternate infinite;
+
       font: {
         size: 2.4rem;
         weight: 600;

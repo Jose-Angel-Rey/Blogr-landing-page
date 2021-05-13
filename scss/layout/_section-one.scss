@@ -24,7 +24,7 @@
     font: {
       family: $main-font-family;
       size: 2.6rem;
-      weight: 500;
+      weight: bold;
     }
     text-align: center;
     width: 100%;
@@ -53,16 +53,15 @@
     }
   }
   &__illustration {
+    animation: beats 1s 1s alternate infinite;
     max-width: 100%;
     margin: 3rem 0rem;
-
     @include for-medium-screens {
       max-width: 130%;
       position: absolute;
       transform: translateX(10%);
     }
   }
-
   // Seccion one - Content
   &__content-container {
     @include for-medium-screens {
