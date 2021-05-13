@@ -15,7 +15,8 @@
     @include bdr;
     margin: 0;
     margin-left: auto;
-    width: 27rem;
+    width: 50%;
+    max-width: 27rem;
     @include flexbox($direction: row, $justify: space-between);
   }
 }
@@ -27,7 +28,7 @@
   @include for-medium-screens {
     color: $white-text;
     margin-bottom: 0;
-    width: 13rem;
+    width: 40%;
   }
 }
 .main-nav__btn:last-of-type {
@@ -38,6 +39,9 @@
   text-decoration: none;
   width: fit-content;
   @include for-medium-screens {
-    width: 15rem;
+    width: 50%;
+    max-width: 15rem;
+    text-align: center;
+    padding: 1.2rem 0;
   }
 }

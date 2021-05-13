@@ -2,79 +2,86 @@
 //      MAIN NAV ACCORDION
 // *****************************
 
-.main-nav__accordion-container {
-  @include bdr(magenta);
-  font-size: 2rem;
-  text-align: center;
-
-  @include for-medium-screens {
-    @include flexbox($justify: space-evenly, $align: flex-start);
-    width: 35rem;
-  }
-}
-
-// Accordion - item
-.main-nav__accordion-item {
-  border-bottom: 1px solid #eee;
-  @include for-medium-screens {
-    border-bottom: none;
-  }
-
-  // Accordion - item title
-  &-title {
-    color: $headings-text-color;
-    display: block;
-    font: {
-      size: 1.8rem;
-      weight: 600;
-    }
-    padding: 1rem 0rem;
-    position: relative;
-    text-decoration: none;
+.main-nav {
+  &__accordion-container {
+    @include bdr(magenta);
+    font-size: 2rem;
+    text-align: center;
 
     @include for-medium-screens {
-      color: $white-text;
+      @include flexbox($justify: space-around, $align: flex-start);
+      width: 35rem;
+    }
+  }
+  // Accordion - item
+  &__accordion-item {
+    border-bottom: 1px solid #eee;
+    @include for-medium-screens {
+      border-bottom: none;
+    }
 
+    // Accordion - item title
+    &-title {
+      color: $headings-text-color;
+      display: block;
+      font: {
+        size: 1.8rem;
+        weight: 600;
+      }
+      padding: 1rem 0rem;
+      position: relative;
+      text-decoration: none;
       &::after {
-        content: url("../../images/icon-arrow-light.svg");
+        content: url("../../images/icon-arrow-dark.svg");
         position: absolute;
         margin-left: 1rem;
         transition: transform 0.5s;
       }
+      &--active::after {
+        transform: rotate(0.5turn);
+      }
+      @include for-medium-screens {
+        color: $white-text;
+
+        &::after {
+          content: url("../../images/icon-arrow-light.svg");
+          position: absolute;
+          margin-left: 0.5rem;
+          transition: transform 0.5s;
+        }
+      }
     }
 
-    &::after {
-      content: url("../../images/icon-arrow-dark.svg");
-      position: absolute;
-      margin-left: 1rem;
-      transition: transform 0.5s;
-    }
-    &--active::after {
-      transform: rotate(0.5turn);
-    }
-  }
+    //Accordion - item content
+    &-content {
+      background-color: #efeff1;
+      border-radius: 0.5rem;
+      list-style-type: none;
+      display: none;
 
-  //Accordion - item content
-  &-content {
-    background-color: #efeff1;
-    border-radius: 0.5rem;
-    list-style-type: none;
-    display: none;
+      &--show {
+        padding: 2rem 0rem;
+        display: block;
+      }
 
-    &--show {
-      padding: 2rem 0rem;
+      @include for-medium-screens {
+        background-color: #fff;
+        padding: 2rem;
+        position: absolute;
+        transform: translateX(-25%);
+        text-align: left;
+      }
+    }
+    // Accordion - item link
+    &-link {
+      color: $headings-text-color;
       display: block;
+      font: {
+        size: 1.6rem;
+        weight: 600;
+      }
+      padding: 0.7rem 0rem;
+      text-decoration: none;
     }
-  }
-  // Accordion - item link
-  &-link {
-    color: $headings-text-color;
-    display: block;
-    font: {
-      size: 1.6rem;
-      weight: 600;
-    }
-    padding: 0.7rem 0rem;
-    text-decoration: none;
   }
 }
