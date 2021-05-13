@@ -2,7 +2,6 @@
 //       MAIN CONTENT - SECTION THREE
 // ***************************************
 
-// Section three
 .section-three {
   @include bdr(red);
   @include flexbox($direction: column);
