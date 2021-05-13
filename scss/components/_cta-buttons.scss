@@ -12,6 +12,9 @@
   margin: 3rem 0rem 1rem;
   width: 100%;
   max-width: 28rem;
+  @include for-medium-screens{
+    font-size: 1.6rem;
+  }
 
   &__btn {
     background: $white-text;

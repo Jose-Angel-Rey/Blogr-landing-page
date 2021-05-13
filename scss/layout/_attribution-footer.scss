@@ -12,6 +12,9 @@
   text-align: center;
   padding: 2rem 1rem;
   @include for-medium-screens {
+    font-size: 1.8rem;
+  }
+  @include for-large-screens {
     font-size: 2rem;
   }
 

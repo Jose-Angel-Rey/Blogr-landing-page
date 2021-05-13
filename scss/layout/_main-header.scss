@@ -32,7 +32,7 @@
     &-title {
       font-size: 3.2rem;
       @include for-medium-screens {
-        font-size: 4.2rem;
+        font-size: 4.5rem;
       }
     }
 
@@ -43,6 +43,9 @@
         weight: 300;
       }
       margin: 2rem 0rem 3rem;
+      @include for-medium-screens {
+        font-size: 1.8rem;
+      }
     }
   }
 }

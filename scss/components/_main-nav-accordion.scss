@@ -43,7 +43,7 @@
       }
       @include for-medium-screens {
         color: $white-text;
-
+        font-weight: 300;
         &::after {
           content: url("../../images/icon-arrow-light.svg");
           position: absolute;
