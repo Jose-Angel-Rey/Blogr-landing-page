@@ -11,7 +11,7 @@
 
   @include for-medium-screens{
   @include flexbox($justify:space-between,$align:flex-start); 
-  margin: 5rem 0 2rem;
+  margin: 8rem 0 2rem;
   }
   // Main footer - Container
   &-container {

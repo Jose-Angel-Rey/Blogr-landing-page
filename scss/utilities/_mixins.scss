@@ -3,7 +3,7 @@
 // ***********************
 
 @mixin bdr($bdr-color: green) {
-  border: 1px solid $bdr-color;
+  border: 0px solid $bdr-color;
 }
 
 // Flexbox
@@ -32,7 +32,7 @@
   }
 }
 @mixin for-large-screens {
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1040px) {
     @content;
   }
 }

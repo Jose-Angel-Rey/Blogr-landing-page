@@ -9,6 +9,9 @@
   background-position: -70vw -45vw, 0;
   border-bottom-left-radius: 10rem;
   padding: 5rem 0rem;
+  @include for-medium-screens {
+    background-position: -55vw -120vw, 0;
+  }
 }
 .main-header {
   @include bdr;
@@ -18,12 +21,15 @@
 
   //   Main header - Content
   &__content {
-    @include flexbox($direction:column);
+    @include flexbox($direction: column);
     text-align: center;
     margin: 11rem 0rem;
 
     &-title {
       font-size: 3.2rem;
+      @include for-medium-screens {
+        font-size: 4.2rem;
+      }
     }
     &-description {
       font: {
