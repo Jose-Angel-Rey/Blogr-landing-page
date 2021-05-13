@@ -1,0 +1,100 @@
+// ***************************************
+//       MAIN CONTENT - SECTION THREE
+// ***************************************
+
+// Section three
+.section-three {
+  @include bdr(red);
+  @include flexbox($direction: column);
+  margin: 3rem 0rem 2rem;
+  width: 85%;
+  max-width: 165rem;
+
+  @include for-medium-screens {
+    @include flexbox($direction: row, $wrap: wrap, $justify: space-evenly);
+    position: relative;
+    width: 100%;
+  }
+  @include for-large-screens {
+    margin: 10rem auto 20rem;
+  }
+  @include for-extra-large-screens {
+    margin: 20rem auto;
+  }
+  //  Section three - Title
+  &__title {
+    color: $headings-text-color;
+    font: {
+      family: $second-font-family;
+      size: 2.6rem;
+      weight: 500;
+    }
+    text-align: center;
+  }
+  //  Section three - Illustration
+  picture {
+    @include for-medium-screens {
+      width: 50%;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__illustration {
+    @include bdr(red);
+    max-width: 100%;
+    margin: 3rem 0rem;
+    @include for-medium-screens {
+      max-width: 130%;
+      position: absolute;
+      transform: translateX(-25%);
+    }
+  }
+
+  // Section three - Content
+  &__content-container {
+    @include for-medium-screens {
+      @include flexbox($direction: column, $justify: flex-end);
+      width: 50%;
+      order: 1;
+    }
+  }
+  // Content - Article
+  &__article {
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: $main-font-family;
+    margin-bottom: 3rem;
+    @include for-medium-screens {
+      transform: translateX(-15%);
+      text-align: left;
+      width: 85%;
+      max-width: 50rem;
+    }
+    &:first-of-type {
+      @include for-extra-large-screens {
+        margin-bottom: 8rem;
+      }
+    }
+
+    // Content - Article title
+    &-title {
+      color: $headings-text-color;
+      font: {
+        size: 2.4rem;
+        weight: 600;
+      }
+      margin-bottom: 2rem;
+    }
+
+    // Content - Article description
+    &-description {
+      color: $content-text-color;
+      font-weight: 300;
+      line-height: 2.5rem;
+      @include for-large-screens {
+        line-height: 2.8rem;
+      }
+    }
+  }
+}

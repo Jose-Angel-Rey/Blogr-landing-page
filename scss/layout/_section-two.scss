@@ -1,0 +1,105 @@
+// **************************************
+//       MAIN CONTENT - SECTION TWO
+// **************************************
+
+.section-two {
+  @include bdr(cyan);
+  @include h-center;
+  position: relative;
+  width: 85%;
+  max-width: 40rem;
+  @include for-medium-screens {
+    @include flexbox($justify: space-between);
+    max-width: 85%;
+  }
+  @include for-large-screens {
+    max-width: 130rem;
+  }
+
+  // Section two - Container
+  &-container {
+    @include bdr;
+    background: url(../../images/bg-pattern-circles.svg),
+      linear-gradient($section-two-bg-color-one, $section-two-bg-color-two);
+    background-size: 160%;
+    background-repeat: no-repeat;
+    background-position: center -70vw, 0;
+    border-radius: 0 10rem 0 10rem;
+    margin-top: 25rem;
+    width: 100%;
+    @include for-medium-screens {
+      background: url(../../images/bg-pattern-circles.svg),
+        linear-gradient($section-two-bg-color-one, $section-two-bg-color-two);
+      background-size: 110%;
+      background-position: -30vw -40vw, 0;
+      background-repeat: no-repeat;
+      margin: 20rem 0;
+    }
+    @include for-large-screens {
+      background-size: 100%;
+      background-position: -22vw -50vw, 0;
+    }
+    @include for-extra-large-screens {
+      background-size: 75%, 100%;
+      background-position: -16vw -40vw, 0;
+    }
+  }
+
+  // Section two - Illustration
+  &__illustration {
+    max-width: 105%;
+    position: absolute;
+    transform: translate(-6%, -60%);
+    @include for-medium-screens {
+      left: -10%;
+      transform: translate(0%);
+      width: 70%;
+    }
+    @include for-large-screens {
+      left: 0;
+      width: 55rem;
+    }
+  }
+
+  // Section two - Content
+  &__content {
+    @include bdr(cyan);
+    color: $white-text;
+    font-family: $main-font-family;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 16rem auto 12rem;
+    @include for-medium-screens {
+      margin: 6rem 0 6rem auto;
+      text-align: left;
+      width: 40%;
+    }
+    @include for-large-screens {
+      margin: 11rem 0 11rem auto;
+      width: 45%;
+      max-width: 52rem;
+    }
+    @include for-extra-large-screens {
+      margin: 11rem 5rem 11rem auto;
+    }
+
+    // Section two - Content title
+    &-title {
+      font: {
+        size: 3rem;
+        weight: 600;
+      }
+      margin-bottom: 2rem;
+    }
+
+    // Section two - Content description
+    &-description {
+      color: lighten($footer-text-color, 10%);
+      font-weight: 300;
+      line-height: 2.5rem;
+      @include for-large-screens {
+        line-height: 2.8rem;
+      }
+    }
+  }
+}
