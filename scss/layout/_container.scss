@@ -4,7 +4,6 @@
 
 .main-container,
 .main-container > [class*="container"] {
-  @include bdr(magenta);
   @include flexbox($direction: column);
   overflow-x: hidden;
   width: 100%;

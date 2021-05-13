@@ -3,7 +3,6 @@
 // ****************************
 
 .main-footer__nav {
-  @include bdr;
   font: {
     family: $main-font-family;
     size: 1.6rem;
@@ -21,6 +20,9 @@
     color: $white-text;
     font-weight: 600;
     margin-bottom: 2rem;
+    @include for-large-screens {
+      margin-bottom: 3.5rem;
+    }
   }
   &-link {
     color: $footer-text-color;

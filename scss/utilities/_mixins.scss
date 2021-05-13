@@ -2,10 +2,6 @@
 //       MIXINS
 // ***********************
 
-@mixin bdr($bdr-color: green) {
-  border: 1px solid $bdr-color;
-}
-
 // Flexbox
 @mixin flexbox(
   $direction: row,

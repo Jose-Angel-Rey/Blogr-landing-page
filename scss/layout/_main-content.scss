@@ -3,7 +3,6 @@
 // ************************
 
 .main-content {
-  @include bdr(cyan);
   @include flexbox($direction: column);
   padding: 8rem 0rem;
   width: 100%;

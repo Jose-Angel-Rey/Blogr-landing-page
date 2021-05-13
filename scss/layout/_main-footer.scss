@@ -3,7 +3,6 @@
 // *********************************
 
 .main-footer {
-  @include bdr(cyan);
   @include flexbox($direction: column);
   margin: 10rem 0 3rem;
   width: 85%;
