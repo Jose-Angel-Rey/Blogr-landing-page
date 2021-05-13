@@ -3,7 +3,6 @@
 // *****************************
 
 .cta-buttons {
-  @include bdr(cyan);
   @include flexbox($justify: space-between);
   font: {
     size: 1.4rem;
@@ -12,7 +11,7 @@
   margin: 3rem 0rem 1rem;
   width: 100%;
   max-width: 28rem;
-  @include for-medium-screens{
+  @include for-medium-screens {
     font-size: 1.6rem;
   }
 
@@ -23,11 +22,35 @@
     color: $btn-text-color;
     padding: 1.2rem 2rem;
     text-decoration: none;
+    transition: all 0.5s;
     width: fit-content;
+
+    &:first-of-type {
+      &:hover {
+        background-color: $btn-hover-bg-color;
+        color: $white-text;
+        border-color: $btn-hover-bg-color;
+      }
+      &:active {
+        background-color: $white-text;
+        color: $btn-bg-color-two;
+        transform: scale(0.95);
+      }
+    }
 
     &:last-of-type {
       background: transparent;
       color: $white-text;
+
+      &:hover {
+        color: $btn-text-color;
+        background-color: $white-text;
+      }
+      &:active {
+        color: $white-text;
+        background-color: $btn-bg-color-two;
+        transform: scale(0.95);
+      }
     }
   }
 }

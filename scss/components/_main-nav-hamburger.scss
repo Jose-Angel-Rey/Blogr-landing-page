@@ -18,7 +18,6 @@
   }
 
   &-container {
-    @include bdr(cyan);
     display: flex;
     position: relative;
     width: 5rem;

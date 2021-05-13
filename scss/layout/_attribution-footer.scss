@@ -14,9 +14,6 @@
   @include for-medium-screens {
     font-size: 1.8rem;
   }
-  @include for-large-screens {
-    font-size: 2rem;
-  }
 
   a {
     background: linear-gradient(
@@ -28,5 +25,13 @@
     -webkit-background-clip: text;
     color: transparent;
     font-weight: 600;
+    transition: color .5s;
+
+    &:hover{
+      color: $btn-bg-color-one;
+    }
+    &:active{
+      color: $btn-bg-color-two;
+    }
   }
 }

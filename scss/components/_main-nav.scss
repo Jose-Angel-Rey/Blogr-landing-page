@@ -11,12 +11,13 @@
   top: 8rem;
   padding: 2rem 3rem;
   width: 80vw;
+  max-width: 130rem;
   opacity: 0;
   transition: all 0.5s ease;
   transform: translateX(-150%);
 
   @include for-medium-screens {
-    @include bdr;
+    @include h-center;
     @include flexbox($justify: space-between);
     background-color: transparent;
     box-shadow: none;
@@ -35,7 +36,6 @@
 
   // Container
   &-container {
-    @include bdr;
     @include flexbox($justify: space-between);
   }
 

@@ -19,6 +19,11 @@
     padding: 5rem 0rem;
     @include for-medium-screens {
       background-position: -55vw -120vw, 0;
+      padding: 6rem 0rem 8rem;
+    }
+    @include for-large-screens {
+      background-position: -20vw -70vw, 0;
+    background-size: 200%;
     }
   }
 
