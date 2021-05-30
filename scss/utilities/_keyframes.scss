@@ -1,0 +1,10 @@
+// ******************************
+//         KEYFRAMES    
+// ******************************
+
+@keyframes reveal {
+    to{
+        opacity: 1;
+        transform: translate(0%);
+    }
+}
