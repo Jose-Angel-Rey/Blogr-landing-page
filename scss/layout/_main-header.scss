@@ -35,6 +35,9 @@
     @include flexbox($direction: column);
     text-align: center;
     margin: 11rem 0rem;
+    transform: translateX(-200%);
+    opacity: 0;
+    animation: reveal 2s .5s forwards;
 
     // Main header - Content title
     &-title {

@@ -36,6 +36,10 @@
   // Container
   &-container {
     @include flexbox($justify: space-between);
+    transform: translateY(-200%);
+    opacity: 0;
+    animation: reveal 2s .5s forwards;
+
   }
 
   // Logo
