@@ -62,3 +62,25 @@ ScrollReveal().reveal(".section-three__illustration", {
   origin: "left",
   distance: "3rem",
 });
+
+// Main footer 
+ScrollReveal().reveal(".main-footer__logo", {
+  duration: 2000,
+  delay: 650,
+  origin: "left",
+  distance: "2rem",
+});
+ScrollReveal().reveal(".main-footer__nav", {
+  duration: 2000,
+  delay: 750,
+  origin: "bottom",
+  distance: "3rem",
+});
+
+// Attribution
+ScrollReveal().reveal(".attribution p", {
+  duration: 2000,
+  delay: 850,
+  origin: "bottom",
+  distance: "1rem",
+});
