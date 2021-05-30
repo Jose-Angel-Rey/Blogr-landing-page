@@ -2,14 +2,9 @@
 //         KEYFRAMES
 // ******************************
 
-@keyframes reveal-header-content {
+@keyframes reveal {
   to {
     opacity: 1;
     transform: translate(0%);
-  }
-}
-@keyframes reveal-main-nav {
-  to {
-    opacity: 1;
   }
 }

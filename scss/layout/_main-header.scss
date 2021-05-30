@@ -35,6 +35,13 @@
     @include flexbox($direction: column);
     text-align: center;
     margin: 11rem 0rem;
+    @include for-medium-screens {
+      transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0.75s,
+        transform 2s cubic-bezier(0.5, 0, 0, 1) 0.75s;
+      transform: translateX(-150%);
+      opacity: 0;
+      animation: reveal 2s 0.2s forwards;
+    }
 
     // Main header - Content title
     &-title {
