@@ -67,6 +67,5 @@ ScrollReveal().reveal(".main-footer__nav", {
 ScrollReveal().reveal(".attribution p", {
   duration: 2000,
   delay: 800,
-  origin: "left",
-  distance: "1rem",
+  origin: "left"
 });
