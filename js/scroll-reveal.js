@@ -45,7 +45,7 @@ ScrollReveal().reveal(".section-two__content", {
 ScrollReveal().reveal(".section-two__illustration", {
   duration: 2000,
   delay: 750,
-  origin: "bottom",
+  origin: "left",
   distance: "2rem",
 });
 
@@ -80,7 +80,7 @@ ScrollReveal().reveal(".main-footer__nav", {
 // Attribution
 ScrollReveal().reveal(".attribution p", {
   duration: 2000,
-  delay: 850,
-  origin: "bottom",
+  delay: 800,
+  origin: "left",
   distance: "1rem",
 });
