@@ -1,10 +1,15 @@
 // ******************************
-//         KEYFRAMES    
+//         KEYFRAMES
 // ******************************
 
-@keyframes reveal {
-    to{
-        opacity: 1;
-        transform: translate(0%);
-    }
+@keyframes reveal-header-content {
+  to {
+    opacity: 1;
+    transform: translate(0%);
+  }
+}
+@keyframes reveal-main-nav {
+  to {
+    opacity: 1;
+  }
 }
