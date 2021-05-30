@@ -32,8 +32,7 @@ ScrollReveal().reveal(".section-two__content", {
 ScrollReveal().reveal(".section-two__illustration", {
   duration: 2000,
   delay: 750,
-  origin: "left",
-  distance: "2rem",
+  origin: "left"
 });
 
 // Main content - Section three
